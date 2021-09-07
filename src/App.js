@@ -28,7 +28,7 @@ function App() {
   }, [searchValue])
  
   const apiFetcher = async (searchValue) => {
-    const data = await fetch(`${process.env.API_BASE}/derecho/${searchValue}`);
+    const data = await fetch(`${process.env.REACT_APP_API_BASE}/derecho/${searchValue}`);
     const dataJSON = await data.json();
 
     console.log(dataJSON);
